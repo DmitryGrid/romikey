@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+html {
+    cursor: url(cursor.svg) 4 1, pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #121213;
+    font-family: 'Montserrat';
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.d-flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.justify-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.lenta {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.lenta__text {
+    color: #0b68f0;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    white-space: nowrap;
+}
+
+.lenta__logo {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+}
+
+.marquee {
+    animation: scroll 50s linear infinite;
+    position: relative;
+    display: flex;
+
+}
+
+.lenta__logo:hover .marquee {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.marquee__wrap {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.lenta__logo img {
+    max-width: 160px;
+    height: 50px;
+}
+
+.services {
+    color: #fff;
+    margin-top: 144px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.services__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 88px;
+    margin-right: 108px;
+}
+
+.services__title {
+    font-family: 'Montserrat';
+    font-size: 94px;
+    font-weight: 700;
+    line-height: 114.59px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.services__content {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 39px;
+    max-width: 1128px;
+}
+
+.lenta__create {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.azure {
+    color: #0b68f0;
+}
+
+.lenta__create .azure {
+    margin-right: 30px;
+}
+
+.services-slider {
+    overflow: hidden;
+    margin-top: 134px;
+    margin-bottom: 160px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 245px;
+    max-width: 1152px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-slider .swiper-slide {
+    padding: 36px 41px;
+    color: #fff;
+    background: #19191b;
+    min-width: 470px;
+    height: 610px;
+}
+
+.services-slider .swiper-slide-active {
+    background: #121213;
+    border-top: 1px solid #0b68f0;
+    border-bottom: 1px solid #0b68f0;
+}
+
+.slide-container {
+    height: 100%;
+}
+
+.slide-title {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 54.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 16px;
+}
+
+.slide-price {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: none;
+}
+
+.slide-top__right {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+.slide-link {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0.03em;
+}
+
+.slide-top__right a:hover .slide-link {
+    color: #0b68f0;
+}
+.slide-list {
+    margin-top: 153px;
+}
+
+.slide-list__item {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 24px;
+    color: #3B3D48;
+}
+
+.slide-list__item .marker {
+    margin-right: 5px;
+    color: #000;
+}
+
+.services-slider .swiper-slide-active .slide-list__item {
+    color: #fff;
+}
+
+.services-slider .swiper-slide-active .marker {
+    color: #0b68f0;
+}
+
+.services-slider .swiper-slide-active .slide-price,
+.services-slider .swiper-slide-active .slide-top__right {
+    display: block;
+}
+@media (max-width: 768px) {
+    .services {
+        margin-top: 50px;
+    }
+    .services__top {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .services__content {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .services-slider .swiper-slide {
+        min-width: 320px;
+        width: 320px;
+    }
+    .services-slider, 
+    .swiper-wrapper {
+        width: 100%;
+    }
+    .slide-list {
+        margin-top: 50px;
+    }
+}
